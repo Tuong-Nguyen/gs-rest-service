@@ -1,3 +1,9 @@
+== Remark
+
+This is an sample project for practicing integrating with SonarLint and SonarQube (SonarCloud)
+
+== Original Readme
+
 :spring_version: current
 :toc:
 :project_id: gs-rest-service
