@@ -1,6 +1,12 @@
 == Remark
 
 This is an sample project for practicing integrating with SonarLint and SonarQube (SonarCloud)
+  
+https://rollout.io/blog/getting-started-sonarqube-sonarlint/
+
+== Issues:
+1. sonarqube task failed with error: "You're only authorized to execute a local (preview) SonarQube analysis without pushing the results to the SonarQube server. Please contact your SonarQube administrator.".
+The issue is that there is a project on sonarcloud having the same project key with this project. I change the project key by adding "-Dsonar.projectKey=gs-rest-service" to the "gradle sonarqube" command and it worked.
 
 == Original Readme
 
