@@ -38,6 +38,4 @@ dependencies {
 System.properties['sonar.projectKey'] = 'gs-rest-service'
 System.properties['sonar.organization'] = 'tuong-nguyen-github'
 System.properties['sonar.host.url'] = 'https://sonarcloud.io'
-System.properties['sonar.branch'] = 'master'
-
 
