@@ -7,6 +7,10 @@ buildscript {
     }
 }
 
+plugins {
+    id "org.sonarqube" version "2.6"
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
@@ -15,7 +19,7 @@ apply plugin: 'io.spring.dependency-management'
 
 bootJar {
     baseName = 'gs-rest-service'
-    version =  '0.1.0'
+    version = '0.1.0'
 }
 
 repositories {
@@ -30,4 +34,10 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('com.jayway.jsonpath:json-path')
 }
+
+System.properties['sonar.projectKey'] = 'gs-rest-service'
+System.properties['sonar.organization'] = 'tuong-nguyen-github'
+System.properties['sonar.host.url'] = 'https://sonarcloud.io'
+System.properties['sonar.branch'] = 'master'
+
 
